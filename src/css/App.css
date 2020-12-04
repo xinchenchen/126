@@ -1,4 +1,8 @@
-/* 全局样式 */
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
 
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -7,3 +11,64 @@
   text-align: center;
   color: #2c3e50;
 } */
+
+#app {
+    background-image: url(../assets/backGround.png);
+    background-repeat:round;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    min-width: 1600px;
+    min-height: 1200px;
+}
+#YelTop {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    opacity:0.6;
+    position: fixed;
+    z-index: 2;
+    top: 0%;
+    width: 100%;
+    height: 9%;
+}
+#YelBody {
+    opacity:0.7;
+    z-index: 1;
+    position: absolute;
+    top: 7%;
+    min-width: 1200px;
+    width: 80%;
+    left: 10%;
+    height: 31%;
+    /* height: 91%; */
+    /* min-height: 900px; */
+}
+#YelLeft {
+    position: absolute;
+    z-index: 1;
+    /* left:0%; */
+    width: 77%;
+    height: 100%;
+    background-color: rgb(180, 174, 115);
+}
+#YelRight {
+    position: absolute;
+    z-index: 1;
+    right: 0%;
+    width: 23%;
+    height: 100%;
+    background-color: rgb(21, 135, 189);
+}
+#YelDown {
+    position: fixed;
+    z-index: 1;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    height: 3%;
+    text-align: center;
+    font-size: 14;
+    opacity:0.3;
+    color: white;
+}
